@@ -19,15 +19,19 @@ function clearValue(){
 }
 
 function result(){
-  finalResult = results.value.replace('^','**');
-  try {
-    finalResult = eval(finalResult);
-    results.value = finalResult;
-  } catch (err) {
-    results.value = "Syntax Error..."
-  }
-  encountered = true;
+  if(results.value!=""){
+      finalResult = results.value.replace('^','**');
+      try {
+        finalResult = eval(finalResult);
+        results.value = finalResult;
+      } catch (err) {
+        results.value = "Syntax Error..."
+      }
+      encountered = true;
+      }else{
+        results.value="";}
 }
+     
 
 function del(){
   finalResult = results.value.substring(0,results.value.length-1);
