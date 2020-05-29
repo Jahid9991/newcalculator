@@ -20,7 +20,8 @@ function clearValue(){
 
 function result(){
      let finalResult = results.value.replace('^','**');
-      if(results.value!=""){
+     if(results.value!=""){
+       
         try {
           finalResult = eval(finalResult);
           results.value = finalResult;
@@ -29,7 +30,8 @@ function result(){
         }
         encountered = true;
       }else{
-        results.value="";}
+        results.value="";
+      }
 }
      
 
