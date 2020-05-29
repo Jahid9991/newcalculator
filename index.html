@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wraper">
+        <input type="text" id="result">
+        <div class="container">
+            <div class="item" onclick="clearValue()">C</div>
+            <div class="item"  onclick="setVal('+')">+</div>
+            <div class="item" onclick="setVal('-')">-</div>
+            <div class="item"  onclick="setVal('*')">*</div>
+            <div class="item"  onclick="setVal('/')">/</div>
+            <div class="item"  onclick="setVal(1)">1</div>
+            <div class="item" onclick="setVal(2)">2</div>
+            <div class="item" onclick="setVal(3)">3</div>
+            <div class="item" onclick="setVal(4)">4</div>
+            <div class="item" onclick="setVal(5)">5</div>
+            <div class="item" onclick="setVal(6)">6</div>
+            <div class="item" onclick="setVal(7)">7</div>
+            <div class="item" onclick="setVal(9)">9</div>
+            <div class="item" onclick="setVal(0)">0</div>
+            <div class="item" onclick="setVal('^')">^</div>
+            <div class="item" onclick="setVal('(')">(</div>
+            <div class="item" onclick="setVal(')')">)</div>
+            <div class="item" onclick="setVal('%')">%</div>
+            <div class="item" onclick="del()">del</div>
+            <div class="item" onclick="result()">=</div>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
